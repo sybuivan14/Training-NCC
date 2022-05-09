@@ -3,14 +3,35 @@ git config --global user.name "FIRST_NAME LAST_NAME"
 2. Set your email address:
 git config --global user.email "MY_NAME@example.com"
 
-To set repository-specific username/email configuration:
-From the command line, change into the repository directory.
-
 Set your username:
 git config user.name "FIRST_NAME LAST_NAME"
 
 Set your email address:
-git config user.email "MY_NAME@example.com"
+- git config user.email "MY_NAME@example.com"
 
-Verify your configuration by displaying your configuration file:
-cat .git/config
+Clone 1 repository 
+- git clone url
+
+View all settings:
+- git config --list
+
+Phân loại branch: 
+- Branch chính: master va develop
+- Branch phụ: feature, hotfix, release. 
+
+Quy tắc đặt tên branch feature:
+- feature-*
+- tasknumber-
+
+Tạo mới 1 branch:
+- git branch <name branch>
+Chuyển đổi nhánh branch:
+- git checkout <name branch>
+
+Merge branch sẽ được thực hiện bằng lệnh merge.
+- git merge <name branch>
+
+daily report:(9/5/2022)
++ today: Setting account, Xem lại html/css, git, các lệnh cơ bản của git(git clone, git add, git commit,...)
++ tomorrow: JSX, Lifcycle, component, routerDOM
+
