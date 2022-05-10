@@ -1,0 +1,51 @@
+- Props
+  + React elements
+	. Sử dụng props như 1 attribute của thẻ html
+	. 2 props class, for => className, htmlFor
+	. tuân theo quy ước có sẵn
+  + React components:
+	. Sử dụng props giống như đối số cho func
+	. Tự đặt tên props
+	  , Đặt theo cameCase
+	  , Có thể bao gồm dấu gạch ngang
+  * Chú ý: 
+	. props "key" là props đặc biệt
+	. props cơ bản là đối số của component
+	. Sử dụng destructuring
+
+Cấu trúc cơ bản của 1 project react:
+src
+|__api
+|__assets
+|__components
+|   |__Header
+|     |__index.jsx
+|     |__style.scss
+|__constants
+|__features
+|  |__Auth
+|     |__components
+|        |__Login
+|           |__index.jsx
+|           |__style.scss
+|        ....
+|  .....................
+|__utils
+app.js
+index.js
+
+
+- life cycles(Vòng đời component)
++ Mounting (Được tạo ra)
++ Updating (Được sửa đổi)
++ Unmounting (Bị hủy bỏ)
+
+*componentDidMount()
++ Gọi API biến đổi dữ liệu, cập nhật state
+*componentWillUnMount()
++ Clear timeout hoặc interval nếu có dùng
+==> clearup func useEffect()
+*componentDidUpdate()
++ thay đổi url có query params 
+(Hạn chế dùng)
+

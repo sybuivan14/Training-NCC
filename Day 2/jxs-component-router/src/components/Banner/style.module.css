@@ -1,0 +1,15 @@
+.banner {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.bannerWrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.bannerImage {
+  width: 1250px;
+  height: 100%;
+  object-fit: cover;
+}
